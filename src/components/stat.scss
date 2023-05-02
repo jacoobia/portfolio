@@ -1,0 +1,13 @@
+.stat-container {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.bg-fill {
+    transition: width 1s ease-in-out;
+  }
+  

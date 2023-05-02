@@ -1,12 +1,14 @@
+import { useState } from 'react';
 import './App.scss';
-import Header from './components/header';
+import StatScreen from './pages/statScreen';
 
 const App = () => {
+    const [showStatScreen, setShowStatScreen] = useState(false);
     return (
-        <>
-            <Header />
-            <h1 className='text-3xl '>Hello world!</h1>
-        </>
+        <div className='flex justify-center items-center h-screen select-none'>
+            {!showStatScreen && <button onClick={() => setShowStatScreen(true)}>Stats</button>}
+            {showStatScreen && <StatScreen callback={() => setShowStatScreen(false)} />}
+        </div>
     );
 };
 
