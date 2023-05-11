@@ -5,7 +5,7 @@ import moment from 'moment-timezone';
 const birthDate = '19970214';
 
 const Level = () => {
-    const [age, setAge] = useState<number>(0);
+    const [age, setAge] = useState<number>(99);
     const [progress, setProgress] = useState<number>(0);
     const [exp, setExp] = useState<number>(0);
 

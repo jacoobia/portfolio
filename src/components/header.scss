@@ -1,58 +1,18 @@
 @import '../index.scss';
 
 .root {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-
-    width: 100vw;
+    background-color: white;
+  }
+  
+  .content {
     height: 10vh;
-
-    position: sticky;
-}
-
-.content {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
-    
-    width: 90%;
-    height: 100%;
-}
-
-.title {
+  }
+  
+  .title {
     font-family: Titillium-bold;
-    font-size: 2em;
-
-    width: 25%;
-
-    transition: 500ms;
-    &:hover {
-        cursor: pointer;
-        color: #83b2d8;
-    }
-}
-
-.spacer {
-    flex: 1;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    width: 15%;
-
-    span {
-        transition: 500ms;
-        &:hover {
-            cursor: pointer;
-            color: #83b2d8;
-        }
-    }
-}
+  }
+  
+  .nav span {
+    font-size: 1.25rem;
+  }
+  
